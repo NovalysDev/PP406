@@ -2,6 +2,8 @@
 
 PP406 is an Android diagnostic application for the Peugeot 406 Coupé, developed by **Novalys Apps**. It aims to support non-multiplexed, semi-multiplexed and multiplexed vehicles. Support depends on the engine, ECU and specific part number; some functions are still being developed or require vehicle validation.
 
+PP406 is primarily intended for the **406 Coupé**. Compatibility with other vehicles is in development and is not yet guaranteed.
+
 **Application language: French.**
 
 ## Download the Android application
