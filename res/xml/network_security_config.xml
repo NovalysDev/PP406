@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Private test URLs remain constrained by AppUpdates.checkedUrl(). -->
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors><certificates src="system" /></trust-anchors>
+    </base-config>
+    <!-- Android 7.0 lacks ISRG Root X1. Add the verified public CA only for our host. -->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="false">406coupeclub.novalysdev.fr</domain>
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="@raw/isrg_root_x1" />
+        </trust-anchors>
+    </domain-config>
+</network-security-config>
