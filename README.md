@@ -12,7 +12,7 @@ PP406 is primarily intended for the **406 Coupé**. Compatibility with other veh
 
 This is the official signed Android APK, containing the application's diagnostic communication data. It is not a Windows executable. It requires Android 7.0 or newer, USB host/OTG, and an Actia/Lexia interface running the required NOVALYS APP PP406 V5.0.0 firmware. This build requires root on the Samsung SM-T580. ECU and function support varies by vehicle and has not been validated on every configuration.
 
-**[Download the Lexia interface firmware V5.0.0 (.zip)](https://github.com/NovalysDev/PP406/releases/download/v0.12.55/PP406-Lexia-firmware-V5.0.0.zip).** The archive contains a firmware image and instructions, not a Windows executable. This variant changes the identity of an ACTIA 4.3.2-based firmware; it does not add diagnostic functions. It was confirmed on one interface; compatibility with other hardware revisions remains to be verified. Read the included instructions before flashing.
+**[Download the Lexia interface firmware V5.0.0 (.zip)](https://github.com/NovalysDev/PP406/releases/download/v0.12.55/PP406-Lexia-firmware-V5.0.0.zip).** Designed for PP406 and based on firmware 4.3.2, to retain functionality that may be unavailable in newer versions. Read the included instructions before flashing; compatibility with other interface revisions remains to be verified.
 
 ## About this release
 
