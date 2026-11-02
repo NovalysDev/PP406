@@ -4,9 +4,15 @@ PP406 is an Android diagnostic application for the Peugeot 406 Coupé, developed
 
 **Application language: French.**
 
+## Download the Android application
+
+**[Download PP406 0.12.55 for Android (.apk)](https://github.com/NovalysDev/PP406/releases/download/v0.12.55/PP406-0.12.55.apk)** · [Release details](https://github.com/NovalysDev/PP406/releases/tag/v0.12.55)
+
+This is the official signed Android APK, containing the application's diagnostic communication data. It is not a Windows executable. It requires Android 7.0 or newer, USB host/OTG, and an Actia/Lexia interface running the required NOVALYS APP PP406 V5.0.0 firmware. This build requires root on the Samsung SM-T580. ECU and function support varies by vehicle and has not been validated on every configuration.
+
 ## About this release
 
-This initial release contains the Java source code for version 0.12.55, Android resources and development tests. It does **not** include the signing key, private recordings, or Peugeot communication tables and catalogues extracted from PP2000. Some application features require those separately obtained data files; building this repository alone does not produce a complete diagnostic application. It is not a replacement for the version distributed by Novalys Apps.
+This repository contains the Java source code for version 0.12.55, Android resources and development tests. It does **not** include the signing key, private recordings, or Peugeot communication tables and catalogues extracted from PP2000. Some application features require those separately obtained data files; building this source alone does not produce the complete diagnostic application. Use the official Android APK above for the distributed build.
 
 Siemens D9 BSI identification is experimental and has not yet been validated on a vehicle. Simulated tests or the presence of a menu do not establish that an operation works on a vehicle. Do not use a development build for write, coding or safety-related operations on a vehicle without appropriate validation.
 
