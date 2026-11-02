@@ -1,24 +1,28 @@
 # PP406
 
-PP406 est une application Android de diagnostic pour les Peugeot 406 Coupé, développée par **Novalys Apps**. Le projet vise les différentes architectures de la voiture : non multiplexée, semi-multiplexée et multiplexée. La couverture dépend de la motorisation, du calculateur et de sa référence ; plusieurs fonctions restent en développement ou à valider sur véhicule.
+PP406 is an Android diagnostic application for the Peugeot 406 Coupé, developed by **Novalys Apps**. It aims to support non-multiplexed, semi-multiplexed and multiplexed vehicles. Support depends on the engine, ECU and specific part number; some functions are still being developed or require vehicle validation.
 
-## État de cette publication
+**Application language: French.**
 
-Cette première publication contient le code Java de la version 0.12.55, les ressources Android et des tests de développement. Elle ne contient **ni clé de signature, ni relevés privés, ni tables de communication et catalogues Peugeot issus de PP2000**. Ces données sont nécessaires à une partie de l'application : une compilation de ce dépôt ne suffit donc pas à obtenir une application de diagnostic complète. Elle ne remplace pas la version distribuée par Novalys Apps.
+## About this release
 
-La lecture BSI Siemens D9 est expérimentale et n'a pas encore été validée physiquement. Les tests simulés ou la présence d'un menu ne garantissent pas le fonctionnement d'une commande sur un véhicule. Ne pas utiliser un build de développement pour des opérations d'écriture, de codage ou de sécurité sur une voiture sans validation adaptée.
+This initial release contains the Java source code for version 0.12.55, Android resources and development tests. It does **not** include the signing key, private recordings, or Peugeot communication tables and catalogues extracted from PP2000. Some application features require those separately obtained data files; building this repository alone does not produce a complete diagnostic application. It is not a replacement for the version distributed by Novalys Apps.
 
-## Code
+Siemens D9 BSI identification is experimental and has not yet been validated on a vehicle. Simulated tests or the presence of a menu do not establish that an operation works on a vehicle. Do not use a development build for write, coding or safety-related operations on a vehicle without appropriate validation.
 
-- `src/` : application Android et protocoles.
-- `res/` : ressources et graphismes.
-- `research-tests/` : tests de développement ; certains nécessitent les jeux de données locaux non publiés et ne sont pas lancés automatiquement par Gradle.
-- `licenses/` : licences des références tierces conservées pour les traitements correspondants.
+## Repository contents
 
-## Compilation de développement
+- `src/`: Android application and diagnostic protocols.
+- `res/`: Android resources and graphics.
+- `research-tests/`: development tests, not run automatically by Gradle.
+- `licenses/`: licences for the identified third-party references used by the corresponding components.
 
-Le projet utilise le JDK 17, le SDK Android 36, Gradle 8.14 et Android Gradle Plugin 8.13. Lancez `./gradlew assembleDebug` (ou `gradlew.bat assembleDebug` sous Windows) pour compiler un APK de développement : les données de diagnostic manquantes doivent être ajoutées séparément et légalement. La signature de développement est différente de celle de l'application publiée ; ne désinstallez pas l'application installée pour contourner une incompatibilité de signature.
+## Development build
 
-## Droits
+Requirements: JDK 17, Android SDK 36, Gradle 8.14 and Android Gradle Plugin 8.13.
 
-© Novalys Apps. La mise à disposition publique du code ne constitue pas en elle-même une licence de réutilisation. Les noms et marques Peugeot, Citroën, Lexia et PP2000 appartiennent à leurs titulaires respectifs. Les références tierces identifiées sont accompagnées de leurs licences dans `licenses/`.
+Run `./gradlew assembleDebug` (or `gradlew.bat assembleDebug` on Windows) to build a development APK. The missing diagnostic data must be obtained and added separately, with the appropriate rights. The development build has a different signing certificate from the distributed application; do not uninstall the existing application to bypass a signature mismatch.
+
+## Rights
+
+© Novalys Apps. Publishing the source code does not in itself grant a licence to reuse it. Peugeot, Citroën, Lexia and PP2000 are the property of their respective owners. Identified third-party references are accompanied by their licences in `licenses/`.
